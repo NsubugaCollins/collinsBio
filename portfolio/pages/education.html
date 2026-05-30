@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education & Qualifications - John Doe Portfolio</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Academic background, degrees, professional certifications, work experience, and publications of John Doe.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Bootstrap 5 CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* Custom sub-page adjustment for hero */
+    .subpage-hero {
+      padding: 130px 0 60px;
+      background: var(--dark2);
+      border-bottom: 1px solid var(--card-border);
+      position: relative;
+      overflow: hidden;
+    }
+    .cert-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 24px;
+      height: 100%;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .cert-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-4px);
+    }
+    .cert-icon {
+      font-size: 2.2rem;
+      color: var(--primary);
+    }
+    .cert-title {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 3px;
+    }
+    .cert-issuer {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">JD.PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#about">About & Bio</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="education.html">Education & Inclusions</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== SUBPAGE HERO ===================== -->
+  <header class="subpage-hero">
+    <div class="hero-bg-orb orb2" style="opacity: 0.12;"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mx-auto text-center">
+          <span class="hero-tag">Academic & Career Profile</span>
+          <h1 class="section-title text-center text-white">Education & Professional Inclusions</h1>
+          <p class="section-subtitle mb-0">My educational background, professional training certifications, research publications, and career milestones.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== EDUCATION & EXPERIENCE SECTION ===================== -->
+  <section id="education-experience">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- School Background column -->
+        <div class="col-lg-6 animate-on-scroll">
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <i class="fa-solid fa-graduation-cap text-primary fs-3"></i>
+            <h3 class="fw-bold mb-0">Academic Background</h3>
+          </div>
+          <div class="timeline">
+            <!-- School 1 -->
+            <div class="timeline-item">
+              <div class="timeline-card">
+                <span class="timeline-period">2024 - Present</span>
+                <h4 class="timeline-degree">M.Sc. in Computer Science</h4>
+                <div class="timeline-school">Stanford University</div>
+                <div class="timeline-grade">GPA: 3.92 / 4.00</div>
+                <p class="text-muted small mt-2 mb-0">Specializing in Artificial Intelligence, Distributed Cloud Architectures, and Cryptographic Security systems.</p>
+              </div>
+            </div>
+            <!-- School 2 -->
+            <div class="timeline-item">
+              <div class="timeline-card">
+                <span class="timeline-period">2020 - 2024</span>
+                <h4 class="timeline-degree">B.Sc. in Software Engineering</h4>
+                <div class="timeline-school">University of California, Berkeley</div>
+                <div class="timeline-grade">Honors Degree (Magna Cum Laude)</div>
+                <p class="text-muted small mt-2 mb-0">Courses in Algorithms and Data Structures, Database Systems design, Operating Systems theory, and Mobile App Architectures.</p>
+              </div>
+            </div>
+            <!-- School 3 -->
+            <div class="timeline-item">
+              <div class="timeline-card">
+                <span class="timeline-period">2017 - 2020</span>
+                <h4 class="timeline-degree">Advanced Schooling Certificate</h4>
+                <div class="timeline-school">Science Academy Prep School</div>
+                <div class="timeline-grade">Major in Mathematics & Physics</div>
+                <p class="text-muted small mt-2 mb-0">President of the robotics and tech clubs. Maintained perfect academic scores in computer laboratory evaluations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Experience column -->
+        <div class="col-lg-6 animate-on-scroll">
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <i class="fa-solid fa-briefcase text-success fs-3"></i>
+            <h3 class="fw-bold mb-0">Employment History</h3>
+          </div>
+          <div class="timeline">
+            <!-- Job 1 -->
+            <div class="timeline-item">
+              <div class="timeline-card">
+                <span class="timeline-period" style="background: rgba(67,233,123,0.15); color: var(--accent);">2024 - Present</span>
+                <h4 class="timeline-degree">Senior Full Stack Engineer</h4>
+                <div class="timeline-school">Alpha Tech Solutions (San Francisco)</div>
+                <p class="text-muted small mt-2 mb-0">Lead front-end and back-end integration of SaaS tools. Collaborated with marketing teams on conversion optimization and search engine ranking strategy.</p>
+              </div>
+            </div>
+            <!-- Job 2 -->
+            <div class="timeline-item">
+              <div class="timeline-card">
+                <span class="timeline-period" style="background: rgba(67,233,123,0.15); color: var(--accent);">2022 - 2024</span>
+                <h4 class="timeline-degree">Software Engineer Associate</h4>
+                <div class="timeline-school">Pixel Design Labs (Remote)</div>
+                <p class="text-muted small mt-2 mb-0">Constructed customizable CSS/Bootstrap landing pages, handled API endpoints using Express/NodeJS, and supported cross-browser manual deployments.</p>
+              </div>
+            </div>
+            <!-- Job 3 -->
+            <div class="timeline-item">
+              <div class="timeline-card">
+                <span class="timeline-period" style="background: rgba(67,233,123,0.15); color: var(--accent);">2021 - 2022</span>
+                <h4 class="timeline-degree">Backend Engineering Intern</h4>
+                <div class="timeline-school">Logix Data Systems</div>
+                <p class="text-muted small mt-2 mb-0">Wrote unit scripts, monitored MongoDB clusters, configured continuous integration Docker files, and optimized data retrieval speeds by 15%.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS SECTION ===================== -->
+  <section id="certifications" style="background: var(--dark2);">
+    <div class="container">
+      <div class="text-center mb-5 animate-on-scroll">
+        <div class="section-line mx-auto"></div>
+        <h2 class="section-title">Certifications & Accreditations</h2>
+        <p class="section-subtitle">Formal examinations and training certifications obtained from recognized industry bodies.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Cert 1 -->
+        <div class="col-md-6 col-lg-3 animate-on-scroll">
+          <div class="cert-card">
+            <i class="fa-brands fa-aws cert-icon"></i>
+            <div>
+              <div class="cert-title">Solutions Architect</div>
+              <div class="cert-issuer">Amazon Web Services</div>
+            </div>
+          </div>
+        </div>
+        <!-- Cert 2 -->
+        <div class="col-md-6 col-lg-3 animate-on-scroll">
+          <div class="cert-card">
+            <i class="fa-brands fa-google cert-icon" style="color: var(--secondary);"></i>
+            <div>
+              <div class="cert-title">Cloud Architect</div>
+              <div class="cert-issuer">Google Cloud (GCP)</div>
+            </div>
+          </div>
+        </div>
+        <!-- Cert 3 -->
+        <div class="col-md-6 col-lg-3 animate-on-scroll">
+          <div class="cert-card">
+            <i class="fa-solid fa-user-shield cert-icon" style="color: var(--accent);"></i>
+            <div>
+              <div class="cert-title">CompTIA Security+</div>
+              <div class="cert-issuer">CompTIA International</div>
+            </div>
+          </div>
+        </div>
+        <!-- Cert 4 -->
+        <div class="col-md-6 col-lg-3 animate-on-scroll">
+          <div class="cert-card">
+            <i class="fa-solid fa-code-merge cert-icon" style="color: #ffc107;"></i>
+            <div>
+              <div class="cert-title">Scrum Master (PSM I)</div>
+              <div class="cert-issuer">Scrum.org Org</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AWARDS & PUBLICATIONS SECTION ===================== -->
+  <section id="awards-publications">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 animate-on-scroll">
+          <div class="section-line"></div>
+          <h3 class="fw-bold mb-4">Research & Technical Writing</h3>
+          <ul class="list-unstyled">
+            <li class="mb-4">
+              <div class="d-flex align-items-start gap-3">
+                <i class="fa-solid fa-file-pdf text-danger fs-4 mt-1"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">Optimizing Cloud Infrastructure Auto-scaling</h5>
+                  <p class="text-muted small mb-1">Published in IEEE Journal of Systems & Software (2025)</p>
+                  <p class="small text-light">Investigated container response delays and introduced a reinforcement learning node-scheduling agent to resolve startup lag.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex align-items-start gap-3">
+                <i class="fa-solid fa-file-pdf text-danger fs-4 mt-1"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">State Management in Modern Desktop Apps</h5>
+                  <p class="text-muted small mb-1">Tech Conference Proceedings, Berkeley Press (2023)</p>
+                  <p class="small text-light">A detailed study of reactive variables, shadow DOM renders, and local database syncing patterns across Flutter, React, and Vue frameworks.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-6 animate-on-scroll">
+          <div class="section-line"></div>
+          <h3 class="fw-bold mb-4">Awards & Honors</h3>
+          <ul class="list-unstyled">
+            <li class="mb-4">
+              <div class="d-flex align-items-start gap-3">
+                <i class="fa-solid fa-trophy text-warning fs-4 mt-1"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">1st Place Winner - Silicon Valley Hackathon</h5>
+                  <p class="text-muted small mb-1">Event Organizers: TechCrunch & Google (2024)</p>
+                  <p class="small text-light">Awarded for coding an offline mesh-networking app template that coordinates emergency disaster response notifications without active cellular signals.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex align-items-start gap-3">
+                <i class="fa-solid fa-award text-primary fs-4 mt-1"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">Academic Excellence Fellowship</h5>
+                  <p class="text-muted small mb-1">Stanford Graduate Studies Council (2024)</p>
+                  <p class="small text-light">Awarded to top 3% of incoming post-graduate engineering candidates displaying outstanding academic merit and research capability.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 text-center text-lg-start">
+          <div class="footer-brand">JD.PORTFOLIO</div>
+          <p class="text-muted">A professional space showcasing state-of-the-art architectures, software designs, research papers, and industrial certifications.</p>
+          <div class="social-links justify-content-center justify-content-lg-start">
+            <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-stack-overflow"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2 offset-lg-2 text-center text-md-start">
+          <h5 class="footer-heading">Navigation</h5>
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="../index.html#about" class="footer-link">About & Bio</a>
+          <a href="../index.html#skills" class="footer-link">Skills Portfolio</a>
+          <a href="projects.html" class="footer-link">Full Projects List</a>
+          <a href="education.html" class="footer-link">Education Timeline</a>
+        </div>
+        <div class="col-md-4 col-lg-2 text-center text-md-start">
+          <h5 class="footer-heading">Selected Works</h5>
+          <a href="projects.html" class="footer-link">SmartShop Enterprise</a>
+          <a href="projects.html" class="footer-link">NeuroPredict AI</a>
+          <a href="projects.html" class="footer-link">CyShield Firewalls</a>
+        </div>
+        <div class="col-md-4 col-lg-2 text-center text-md-start">
+          <h5 class="footer-heading">Contact Details</h5>
+          <span class="text-muted d-block small mb-1">Email:</span>
+          <span class="text-light d-block small mb-3">johndoe@example.com</span>
+          <span class="text-muted d-block small mb-1">Address:</span>
+          <span class="text-light d-block small">Suite 404, San Francisco</span>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="d-flex justify-content-between flex-wrap text-center footer-copy">
+        <p class="mb-0 mx-auto">&copy; 2026 JD.PORTFOLIO. All Rights Reserved. Built with HTML, CSS, and Bootstrap.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="backToTop" aria-label="Scroll back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="../js/main.js"></script>
+</body>
+</html>

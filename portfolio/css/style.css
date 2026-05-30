@@ -277,19 +277,28 @@ section { padding: 90px 0; }
 .about-img-card {
   width: 100%; max-width: 360px; height: 420px;
   background: var(--card-bg);
-  border: 2px dashed var(--card-border);
+  border: 3px solid rgba(255,101,132,0.35);
   border-radius: var(--radius);
-  display: flex; align-items: center; justify-content: center;
-  flex-direction: column; gap: 10px;
-  color: var(--text-muted); font-size: 0.9rem;
-  position: relative; overflow: hidden;
+  position: relative;
+  overflow: hidden;
   margin: 0 auto;
+  box-shadow: var(--shadow), 0 0 0 6px rgba(255,101,132,0.08);
 }
 .about-img-card::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255,101,132,0.06), rgba(108,99,255,0.06));
+  background: linear-gradient(180deg, transparent 60%, rgba(13,13,26,0.7) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+.about-profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: calc(var(--radius) - 3px);
 }
 .about-info-item {
   display: flex; align-items: center; gap: 10px;

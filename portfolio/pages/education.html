@@ -16,7 +16,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    /* Custom sub-page adjustment for hero */
+    /* ── Sub-page hero ── */
     .subpage-hero {
       padding: 130px 0 60px;
       background: var(--dark2);
@@ -24,6 +24,17 @@
       position: relative;
       overflow: hidden;
     }
+    /* Hero title: restore gradient (remove Bootstrap text-white override) */
+    .subpage-hero .section-title {
+      -webkit-text-fill-color: transparent !important;
+      color: transparent !important;
+    }
+    /* Section column heading */
+    .edu-col-heading {
+      color: #e8e8f0;
+      font-size: 1.3rem;
+    }
+    /* ── Certification cards ── */
     .cert-card {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
@@ -38,19 +49,38 @@
     .cert-card:hover {
       border-color: var(--primary);
       transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(108,99,255,0.2);
     }
     .cert-icon {
       font-size: 2.2rem;
       color: var(--primary);
+      flex-shrink: 0;
     }
     .cert-title {
       font-weight: 700;
       font-size: 1rem;
-      margin-bottom: 3px;
+      color: #e8e8f0;
+      margin-bottom: 4px;
     }
     .cert-issuer {
       font-size: 0.82rem;
-      color: var(--text-muted);
+      color: #a0a0c8;
+      margin-bottom: 0;
+    }
+    /* Description text inside cert/reference cards */
+    .cert-card p {
+      color: #b8b8d8 !important;
+      line-height: 1.6;
+    }
+    /* Timeline school name */
+    .timeline-school {
+      color: #a8a8cc !important;
+    }
+    /* Section subtitle on dark backgrounds */
+    #education-experience .section-subtitle,
+    #certifications .section-subtitle,
+    #references .section-subtitle {
+      color: #a0a0c0;
     }
   </style>
 </head>
@@ -83,7 +113,7 @@
       <div class="row align-items-center">
         <div class="col-lg-8 mx-auto text-center">
           <span class="hero-tag">Academic & Career Profile</span>
-          <h1 class="section-title text-center text-white">Education & Professional Inclusions</h1>
+          <h1 class="section-title text-center">Education &amp; Professional Inclusions</h1>
           <p class="section-subtitle mb-0">My educational background, professional training certifications, research publications, and career milestones.</p>
         </div>
       </div>
@@ -99,7 +129,7 @@
         <div class="col-lg-6 animate-on-scroll">
           <div class="d-flex align-items-center gap-3 mb-4">
             <i class="fa-solid fa-graduation-cap text-primary fs-3"></i>
-            <h3 class="fw-bold mb-0">Academic Background</h3>
+            <h3 class="fw-bold mb-0 edu-col-heading">Academic Background</h3>
           </div>
           <div class="timeline">
             <!-- School 1 -->

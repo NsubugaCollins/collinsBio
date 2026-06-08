@@ -82,6 +82,62 @@
     #references .section-subtitle {
       color: #a0a0c0;
     }
+    /* ── AI/ML Certificate image showcase ── */
+    .cert-image-showcase {
+      background: var(--card-bg);
+      border: 1px solid rgba(108,99,255,0.35);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 0 40px rgba(108,99,255,0.12);
+      position: relative;
+    }
+    .cert-image-badge {
+      position: absolute;
+      top: 16px; left: 16px;
+      background: rgba(108,99,255,0.85);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 5px 14px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      backdrop-filter: blur(6px);
+      z-index: 2;
+    }
+    .cert-image-img {
+      width: 100%;
+      display: block;
+      max-height: 500px;
+      object-fit: contain;
+      background: #0d0d1a;
+    }
+    .cert-image-caption {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 20px 24px;
+      border-top: 1px solid rgba(108,99,255,0.2);
+      background: rgba(108,99,255,0.05);
+    }
+    .cert-image-caption i {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .cert-image-caption strong {
+      display: block;
+      color: #e8e8f0;
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+    .cert-image-caption span {
+      color: #a8a8cc;
+      font-size: 0.82rem;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
@@ -218,7 +274,7 @@
       <div class="text-center mb-5 animate-on-scroll">
         <div class="section-line mx-auto"></div>
         <h2 class="section-title">Certifications & Accreditations</h2>
-        <p class="section-subtitle">Formal examinations and training certifications obtained from recognized industry bodies.</p>
+        <p class="section-subtitle">Formal training certifications obtained.</p>
       </div>
 
       <div class="row g-4">
@@ -263,6 +319,30 @@
           </div>
         </div>
       </div>
+
+      <!-- AI/ML Certificate Image -->
+      <div class="row justify-content-center mt-5 animate-on-scroll">
+        <div class="col-lg-8 col-md-10">
+          <div class="cert-image-showcase">
+            <div class="cert-image-badge">
+              <i class="fa-solid fa-brain"></i> AI / Machine Learning
+            </div>
+            <img
+              src="../assets/images/ML.png"
+              alt="AI & Machine Learning Participation Certificate – Nsubuga Collins"
+              class="cert-image-img"
+            >
+            <div class="cert-image-caption">
+              <i class="fa-solid fa-certificate" style="color: var(--accent);"></i>
+              <div>
+                <strong>Certificate of Participation — Artificial Intelligence &amp; Machine Learning</strong>
+                <span>Awarded upon successful completion of an AI/ML programme, covering core concepts in machine learning algorithms, model development, and intelligent systems design.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 

@@ -442,27 +442,27 @@
         <div class="col-lg-7 animate-on-scroll">
           <div class="contact-form-card">
             <h4 class="mb-4 fw-bold">Send an Instant Message</h4>
-            <form id="contactForm">
+            <form id="contactForm" action="https://formspree.io/f/mykawrok" method="POST">
               <div class="row">
                 <div class="col-md-6">
                   <label for="fullName" class="form-label-custom">YOUR FULL NAME *</label>
-                  <input type="text" id="fullName" class="form-control-custom" placeholder="e.g. Alice Smith" required>
+                  <input type="text" id="fullName" name="name" class="form-control-custom" placeholder="e.g. Alice Smith" required>
                 </div>
                 <div class="col-md-6">
                   <label for="emailAddress" class="form-label-custom">YOUR EMAIL ADDRESS *</label>
-                  <input type="email" id="emailAddress" class="form-control-custom" placeholder="e.g. alice@example.com" required>
+                  <input type="email" id="emailAddress" name="email" class="form-control-custom" placeholder="e.g. alice@example.com" required>
                 </div>
               </div>
               <div>
                 <label for="subject" class="form-label-custom">SUBJECT *</label>
-                <input type="text" id="subject" class="form-control-custom" placeholder="e.g. Project Consultation Offer" required>
+                <input type="text" id="subject" name="subject" class="form-control-custom" placeholder="e.g. Project Consultation Offer" required>
               </div>
               <div>
                 <label for="message" class="form-label-custom">MESSAGE BODY *</label>
-                <textarea id="message" class="form-control-custom" placeholder="Type your detailed proposal or query here..." required></textarea>
+                <textarea id="message" name="message" class="form-control-custom" placeholder="Type your detailed proposal or query here..." required></textarea>
               </div>
               <div class="text-end">
-                <button type="submit" class="btn-primary-custom border-0 w-100 py-3">Send Message <i class="fa-solid fa-paper-plane ms-2"></i></button>
+                <button type="submit" id="submitBtn" class="btn-primary-custom border-0 w-100 py-3">Send Message <i class="fa-solid fa-paper-plane ms-2"></i></button>
               </div>
             </form>
           </div>

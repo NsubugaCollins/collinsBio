@@ -88,13 +88,45 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Simple form submission handler
+  // Formspree AJAX submission handler
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      alert('Thank you! Your message has been sent successfully (Mock action).');
-      contactForm.reset();
+      const submitBtn = document.getElementById('submitBtn');
+      const originalBtnText = submitBtn.innerHTML;
+      
+      // Change button text to visual loading state
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin ms-2"></i>';
+      
+      const formData = new FormData(contactForm);
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        if (response.ok) {
+          alert('Thank you! Your message has been sent successfully to Nsubuga Collins.');
+          contactForm.reset();
+        } else {
+          const data = await response.json();
+          if (Object.hasOwn(data, 'errors')) {
+            alert(data.errors.map(error => error.message).join(", "));
+          } else {
+            alert('Oops! There was a problem submitting your form. Please try again.');
+          }
+        }
+      } catch (error) {
+        alert('Oops! Network error. Please check your connection and try again.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+      }
     });
   }
 });
